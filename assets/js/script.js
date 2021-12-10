@@ -1,9 +1,10 @@
+require("dotenv").config();
 //websites access
-var edamamApiKey = "e3dc2dfdc5b7caba73d800f52c560cdc"
-var appID = "4c72f271"
-var cocktailKey = "9973533"
+var edamamApiKey = process.env.EDAMAM_API_KEY
+var appID = process.env.API_ID
+var cocktailKey = process.env.COCKTAIL_KEY
 
-//global available undefined until later
+//global available undefined until later    
 var dinnerItems
 var drinkItems
 var excludeItems
